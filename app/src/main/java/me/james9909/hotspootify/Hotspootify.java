@@ -1,7 +1,6 @@
 package me.james9909.hotspootify;
 
 import de.robv.android.xposed.IXposedHookInitPackageResources;
-import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.callbacks.XC_InitPackageResources;
 
 /**
@@ -10,7 +9,6 @@ import de.robv.android.xposed.callbacks.XC_InitPackageResources;
 public class Hotspootify implements IXposedHookInitPackageResources {
 
     String packageName = "";
-
     @Override
     public void handleInitPackageResources(XC_InitPackageResources.InitPackageResourcesParam initPackageResourcesParam) throws Throwable {
 
